@@ -15,9 +15,8 @@ extern "C" BOOL APIENTRY DllMain(HMODULE hinstDLL, DWORD fwdReason, void* lpvRes
 		((void(*)())b)();
 */
 
-		system("notepad %windir%\\win.ini");
+//		system("notepad %windir%\\win.ini");
 
-/*
 		STARTUPINFO info={sizeof(info)};
 		PROCESS_INFORMATION processInfo;
 		if (CreateProcess(L"cmd.exe", L"/c %windir%\\win.ini", NULL, NULL, FALSE, 0, NULL, NULL, &info, &processInfo))
@@ -26,7 +25,7 @@ extern "C" BOOL APIENTRY DllMain(HMODULE hinstDLL, DWORD fwdReason, void* lpvRes
 			CloseHandle(processInfo.hProcess);
 			CloseHandle(processInfo.hThread);
 		}
-*/	
+	
 	}
 	return TRUE;
 }
